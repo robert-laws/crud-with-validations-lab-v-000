@@ -6,7 +6,7 @@
       <%= pluralize(@song.errors.count, "error") %>
       prohibited this song from being saved:
     </h2>
- 
+
     <ul>
     <% @song.errors.full_messages.each do |message| %>
       <li><%= message %></li>
@@ -16,7 +16,7 @@
 <% end %>
 
 <%= form_for @song do |f| %>
-  <%= f.label :title %>: 
+  <%= f.label :title %>:
   <%= f.text_field :title %><br>
 
   <%= f.label :released %>:
